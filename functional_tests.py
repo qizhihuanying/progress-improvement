@@ -32,7 +32,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         
         table = self.browser.find_element(By.ID,'id_list_table')
-        rows = table.find_elemens(By.TAG_NAME, 'tr')
+        rows = table.find_elements(By.TAG_NAME, 'tr')
         self.assertIn('1: Buy flowers', [row.text for row in rows])
         
         
